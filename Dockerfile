@@ -1,4 +1,4 @@
 FROM nginx
-LABEL name="ashutoshh singh"
+LABEL name="Haritha"
 COPY index.html /usr/share/nginx/html/
 EXPOSE 80
