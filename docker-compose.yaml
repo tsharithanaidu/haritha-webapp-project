@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  haritha-ui-service:
+    image: haritha-webui:version$BUILD_NUMBER
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: haritha-web-c1
+    ports:
+      - 1133:80
