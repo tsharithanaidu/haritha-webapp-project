@@ -7,4 +7,4 @@ services:
       dockerfile: Dockerfile
     container_name: haritha-web-c2
     ports:
-      - 1133:80
+      - 1233:80
