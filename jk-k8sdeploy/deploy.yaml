@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: haritha-dep1
+  name: ashu-dep1 # change name of deployment
+  namespace: ashu-space # add your namespace info 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: haritha-dep1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: haritha-dep1
+    spec:
+      containers:
+      - image: tsharithanaidu/haritha-webui-cloud4c:version22 # change image to your docker hub image
+        name: haritha-webui-cloud4c
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
