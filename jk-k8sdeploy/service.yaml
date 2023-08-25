@@ -8,8 +8,8 @@ metadata:
   namespace: haritha-space # adding namespace 
 spec:
   ports:
-  - name: 1134-80
-    port: 1134
+  - name: 1233-80
+    port: 1233
     protocol: TCP
     targetPort: 80
   selector: # you have match label with pod template
