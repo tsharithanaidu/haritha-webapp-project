@@ -9,11 +9,11 @@ agent{  label 'master'}
       agent any
       steps{
         echo 'hello jenkins'
-        sh ***
+        sh '''
           date
         cal
         whoami
-        ***
+        '''
       }
     }
   }
