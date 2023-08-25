@@ -4,8 +4,8 @@ metadata:
   creationTimestamp: null
   labels:
     app: haritha-dep1
-  name: ashu-dep1 # change name of deployment
-  namespace: ashu-space # add your namespace info 
+  name: haritha-dep1 # change name of deployment
+  namespace: haritha-space # add your namespace info 
 spec:
   replicas: 1
   selector:
