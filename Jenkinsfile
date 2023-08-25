@@ -1,7 +1,5 @@
 pipeline{
-agent{
-  label 'master'
-}
+agent{  label 'master'}
   environment{
     USER='haritha'
     DB='mydata'
@@ -17,18 +15,11 @@ agent{
         whoami
         ***
       }
-      post{
-      always{
-        
-        echo 'this section will be running always'
-      }
-        failure{
-        echo 'this section is failure'
-        }
-        success{
-          echo 'general notification'
-        }
-      }
     }
   }
-}
+      post{
+      always{         echo 'this section will be running always'      }
+        failure{        echo 'this section is failure'        }
+        success{          echo 'general notification'        }
+      }
+  }
