@@ -19,7 +19,7 @@ spec:
         app: haritha-dep1
     spec:
       containers:
-      - image: tsharithanaidu/haritha-webui-cloud4c:version41 # change image to your docker hub image
+      - image: tsharithanaidu/haritha-webui-cloud4c:version49 # change image to your docker hub image
         name: haritha-webui-cloud4c
         ports:
         - containerPort: 80
