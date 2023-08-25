@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: harithalb1
+  name: harithalb1 # change name of service
+  namespace: haritha-space # adding namespace 
+spec:
+  ports:
+  - name: 1134-80
+    port: 1134
+    protocol: TCP
+    targetPort: 80
+  selector: # you have match label with pod template
+   app: haritha-dep1 # update label of pod template section
+  type: NodePort
+status:
+  loadBalancer: {}
