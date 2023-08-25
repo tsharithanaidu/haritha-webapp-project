@@ -1,5 +1,5 @@
 pipeline{
-agent{  label 'master'}
+agent{  label 'mymaster'}
   environment{
     USER='haritha'
     DB='mydata'
