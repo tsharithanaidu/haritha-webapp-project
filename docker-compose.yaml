@@ -5,6 +5,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: haritha-web-c3
+    container_name: haritha-web-c4
     ports:
       - 1233:80
